@@ -35,6 +35,8 @@ Cleaning
 - using Power Query for NUll, missing values, duplicates, splitting and joining columns, Changed column names. 
 
 Data Model
+ - Date table
+   Created data table  based earliest date of  Orders['Order Date'] column anf latest date of Orders['Shipping Date']. Then     it  was populated with : Day of Week, Month Number, Month Name, Quarter, Year, Start of Year, Start of Quarter, Start of     Month and  Start of Week columns by using DAX formulas.
 
 Report setup
 
