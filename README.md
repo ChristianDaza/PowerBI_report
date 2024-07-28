@@ -35,8 +35,26 @@ Cleaning
 - using Power Query for NUll, missing values, duplicates, splitting and joining columns, Changed column names. 
 
 Data Model
- - Date table
+- Date table
    Created data table  based earliest date of  Orders['Order Date'] column anf latest date of Orders['Shipping Date']. Then     it  was populated with : Day of Week, Month Number, Month Name, Quarter, Year, Start of Year, Start of Quarter, Start of     Month and  Start of Week columns by using DAX formulas.
+
+- Build start schema
+  Create relationships  between tables sharing product code, Store code.
+  Make relationship between  Store User UUID-User ID
+  Make relayionship between date and Order date, date and shipping date.
+  Only oder date-Shipping Date  is the active relationhsip, while all other  are one to many  wiht single direction filter
+
+- Create measures
+  Created measure tables and populated them wiht: Total Orders, Total Revenue, Total Profit, Total costumers, Total Quantity, Profit YTD(Curretn year) and Revenue YTD(Curretn year).
+
+
+ - Hieriachies 
+    Creatted the following hierarchy on dates table: Start Of Year, Star Of Quarter, Start Of Month, Start of Week, , Date.
+    Swithce contry codes to their corresponding country name.
+    Create a full greography name for the store table: country region, Country name.
+    Make sure World region, Country and country regions columns hae the appropriate data category.
+   Create gepgraphy ctegory in store table: World Region, Country, Country region.
+   
 
 Report setup
 
