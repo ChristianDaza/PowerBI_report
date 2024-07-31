@@ -55,10 +55,18 @@ Data Model
     Make sure World region, Country and country regions columns hae the appropriate data category.
    Create gepgraphy ctegory in store table: World Region, Country, Country region.
    
+Milestone 5: 
 
-Report setup
+Customer detail paige:
+- Created card visual to display the Total Custumer measure.
+- Created  new measure  Revenue per customer and displayed it on a card visual.
+- Created donut chart  showing total customer per eahc country.
+- Added column chart visual showing  number of custumers per product category.
+- Added Line chart  displaying total number of custumers per Start of year, quarter and moth using Date hierarchy. Also add forecats for the next 10 periods with 95% confidence interval.
+- Created  new table displaying top 20 costumers based on revenue, displaying their full nam, revenue and number of orders, Revenue column displaying data bars.
+- Create card visual displaying custumer name, revenue and number of orders, for the 3 top customers wiht the highest revenue.
+- Added data slicer, in between year slicer.
 
-Customer detail paige
 Executive summary page
 Product Detail page
 
