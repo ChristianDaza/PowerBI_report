@@ -68,6 +68,15 @@ Customer detail paige:
 - Added data slicer, in between year slicer.
 
 Executive summary page
+- Created card visuals for total Revenue, Total Orders and Total profit.
+- Created  Total revenue line chart with the date Hierarchy for start of year, quarter and month.
+- Created donut chart  for revenue by country and store type.
+- Created Previous quarter profit, revenue and orders measures.
+- Created target measure for next quarter increasing previous quarter values by 5%.
+- Created KPI for total revenue, Total profit and total order using Total revenue, start of quarter and their target measures.
+- Format KPI's, direction (High good), Bad color(red), Transparency(15%).
+
+
 Product Detail page
 
 Storres map page
