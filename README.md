@@ -78,6 +78,18 @@ Executive summary page
 
 
 Product Detail page
+- Create new measures: current quarter Orders, Reveue and profit.
+- Create new measures: Quarterly target for orders, revenue and profit (current quarter measure + 10%).
+- Create new measure: difference between current quarter measures (Orders, Revenue and Profit) and targets
+- Added three gauges: comparing the curretn quarter performance and gains quarterly targets based on the previous measures. Applied conditional formatting  red if target has not been met.
+- Added Filter crads for product category and country.
+- Added an area chart for revenue by product category.
+- Added a top product table wiht the following columns: Product descirption, Total revenue, Total customers, Totalm Orders, Total profit per Oder.
+- Create new measure profit per item.
+- Added scatter graph  of quantityt sold gainst profit per item using the Profit per item measure.
+- Adde a pop slice bar for country and product catgory using bookmarks.
+
+
 
 Storres map page
 
