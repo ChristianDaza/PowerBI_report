@@ -92,6 +92,13 @@ Product Detail page
 
 
 Storres map page
+- Add map visualisation based on the geography hierarchy and bubbles size by ProfitYTD.
+- Add a slicer for each of the countries wiht the multiple and all selection options.
+- Create Profit goal and revenue goal measures , which should be a 20% increase on the previous year's year-to-date profit.
+- Create a drill through page from the Map page containing:Table(Description, Profit YTD, Total Orders and totla revenue), Column chart total orders by category, Gaguses for current and goal profit, Card visual for currently selected store.
+- Add a Store Tooltip page based on the  store's year-to-date profit performance against the profit target.
+
+
 
 Cross-filtering and navigation
 Metrics for Users Outside the company Using SQL
