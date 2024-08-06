@@ -101,6 +101,10 @@ Storres map page
 
 
 Cross-filtering and navigation
+-  Edit inetrations  for visual in the Executive summary, Customer Detail and Product detail pages.
+
+- Complete navegation bars, with icons for each main page, which chnage color when hover and when ctl + shif + click it move to the page assigned ot the icon.
+
 Metrics for Users Outside the company Using SQL
 
 
