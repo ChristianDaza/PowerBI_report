@@ -60,14 +60,14 @@ git clone https://github.com/ChristianDaza/EDA_finance.git
 - Card visual: Top customer's  full name, revenue and number of orders.
 - In between year slicer.
 
-Executive summary page
-- Created card visuals for total Revenue, Total Orders and Total profit.
-- Created  Total revenue line chart with the date Hierarchy for start of year, quarter and month.
+##### Executive summary page
+- Card visuals: total revenue, total number of orders and total profit.
+- Line chart: Total revenue with the date Hierarchy (start of year, start of quarter and start of month).
 - Created donut chart  for revenue by country and store type.
-- Created Previous quarter profit, revenue and orders measures.
-- Created target measure for next quarter increasing previous quarter values by 5%.
-- Created KPI for total revenue, Total profit and total order using Total revenue, start of quarter and their target measures.
-- Format KPI's, direction (High good), Bad color(red), Transparency(15%).
+- Calculate measures: quarter profit, quarter revenue and quarter orders for current year.
+- Calculate measures: target measure for next quarter increasing previous quarter values by 5%.
+- KPIs: quarter revenue, quarter profit and quarter orders (new measures) againts their target values (5% increase from original value) (new measure) as maximum value. If the target was not reach the values appear in red.
+
 
 
 Product Detail page
