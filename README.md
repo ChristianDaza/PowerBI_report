@@ -51,6 +51,7 @@ git clone https://github.com/ChristianDaza/EDA_finance.git
 
 ##### Customer detail paige
 
+
 - Card visual: total number of customers.
 - Card visual: revenue per customer (new measure).
 - Donut chart: total number of customers per country.
@@ -60,28 +61,28 @@ git clone https://github.com/ChristianDaza/EDA_finance.git
 - Card visual: Top customer's  full name, revenue and number of orders.
 - In between year slicer.
 
+
 ##### Executive summary page
 - Card visuals: total revenue, total number of orders and total profit.
 - Line chart: Total revenue with the date Hierarchy (start of year, start of quarter and start of month).
 - Created donut chart  for revenue by country and store type.
-- Calculate measures: quarter profit, quarter revenue and quarter orders for current year.
-- Calculate measures: target measure for next quarter increasing previous quarter values by 5%.
+- New measures: quarter profit, quarter revenue and quarter orders for current year.
+- New measures: target measure for next quarter increasing previous quarter values by 5%.
 - KPIs: quarter revenue, quarter profit and quarter orders (new measures) againts their target values (5% increase from original value) (new measure) as maximum value. If the target was not reach the values appear in red.
 
 
+##### Product Detail page
 
-Product Detail page
-- Create new measures: current quarter Orders, Reveue and profit.
-- Create new measures: Quarterly target for orders, revenue and profit (current quarter measure + 10%).
-- Create new measure: difference between current quarter measures (Orders, Revenue and Profit) and targets
-- Added three gauges: comparing the curretn quarter performance and gains quarterly targets based on the previous measures. Applied conditional formatting  red if target has not been met.
-- Added Filter crads for product category and country.
-- Added an area chart for revenue by product category.
-- Added a top product table wiht the following columns: Product descirption, Total revenue, Total customers, Totalm Orders, Total profit per Oder.
-- Create new measure profit per item.
-- Added scatter graph  of quantityt sold gainst profit per item using the Profit per item measure.
-- Adde a pop slice bar for country and product catgory using bookmarks.
-
+- New measures: current quarter orders, current quarter reveue and current quarter profit.
+- New measures: quarterly targets for orders, revenue and profit (current quarter measure + 10%).
+- New measure: difference between current quarter measures (Orders, Revenue and Profit) and targets. 
+- Gauges: comparing the curretn quarter performance and agains quarterly targets based. The values will appear red if the targets has not been met.
+- Filter cards: product category and country.
+- Area chart: revenue by product category.
+- Table: top 10 products wiht Product descirption, total revenue, total customers, total orders, total profit per oder columns.
+- New measure: profit per item.
+- Scatter graph: quantity sold against profit per item.
+- Pop slice bar: country and product catgory using bookmarks.
 
 
 Storres map page
