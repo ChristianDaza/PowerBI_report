@@ -12,7 +12,5 @@ JOIN dim_store
 ON orders.store_code = dim_store.store_code
 GROUP BY dim_store.store_type, orders.product_quantity;
 
-	
-		
 
  
