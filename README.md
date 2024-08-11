@@ -1,13 +1,13 @@
 # PowerBI_report
 Data analyitics in PowerBi
 
+
 ## Description
- 
 PowerBI_report is a PowerBI based data analytics project, in which data was imported, cleaned, columns were trnasformed, a schema was made, measures were calculated, visualisation were made and arragange into pages. Additionally some measure were calculated with SQL.
 The aim of this project was to apply the knowledge and skills gain in the Azure and PowerBI modules of AiCore to gain more experience. 
 
-## Table of content
 
+## Table of content
 - [Description](#Description)
 - [Intallation](#Intallation)
 - [Usage](#Usage)
@@ -17,8 +17,7 @@ The aim of this project was to apply the knowledge and skills gain in the Azure 
 
 
 ## Installation
-
- The source of this code is currently hosted at: https://github.com/ChristianDaza/EDA_finance.git
+The source of this code is currently hosted at: https://github.com/ChristianDaza/EDA_finance.git
 
 Clone this git repository into your machine using the following code:
 ```
@@ -33,9 +32,7 @@ git clone https://github.com/ChristianDaza/EDA_finance.git
 
 - The data was transfomed, first cleaned from NUll, missing values and duplicates, then columns were rename and some columns were split or joined where appropriate using Power Query.
 
-
 #### Build data model
-
 - Created a Date table using the based on  smalles value of Order Date and largest value of Shipping Date from the Orders table. Additional columns added include: Day of Week, Month Number, Month Name, Quarter, Year, Start of Year, Start of Quarter, Start of the Month and Start of Week columns.
 
 - A STAR schema was build between the tables using the followinf columns: product_code, store code, date, order Date and shipping data. All relationships were active, one-to-many and with single filter direction.
@@ -50,8 +47,6 @@ git clone https://github.com/ChristianDaza/EDA_finance.git
 #### Report 
 
 ##### Customer detail paige
-
-
 - Card visual: total number of customers.
 - Card visual: revenue per customer (new measure).
 - Donut chart: total number of customers per country.
@@ -60,7 +55,7 @@ git clone https://github.com/ChristianDaza/EDA_finance.git
 -Table: top 20 customers based on revenue, displaying full name, revenue and number of orders.
 - Card visual: Top customer's  full name, revenue and number of orders.
 - In between year slicer.
-
+- Navegation bar.
 
 ##### Executive summary page
 - Card visuals: total revenue, total number of orders and total profit.
@@ -69,10 +64,9 @@ git clone https://github.com/ChristianDaza/EDA_finance.git
 - New measures: quarter profit, quarter revenue and quarter orders for current year.
 - New measures: target measure for next quarter increasing previous quarter values by 5%.
 - KPIs: quarter revenue, quarter profit and quarter orders (new measures) againts their target values (5% increase from original value) (new measure) as maximum value. If the target was not reach the values appear in red.
-
+- Navegation bar.
 
 ##### Product Detail page
-
 - New measures: current quarter orders, current quarter reveue and current quarter profit.
 - New measures: quarterly targets for orders, revenue and profit (current quarter measure + 10%).
 - New measure: difference between current quarter measures (Orders, Revenue and Profit) and targets. 
@@ -83,36 +77,32 @@ git clone https://github.com/ChristianDaza/EDA_finance.git
 - New measure: profit per item.
 - Scatter graph: quantity sold against profit per item.
 - Pop slice bar: country and product catgory using bookmarks.
+- Navegation bar.
 
+##### Store map page
+- Map: based on the geography hierarchy od the tores table and bubbles size by ProfitYTD.
+- Slicer: for  countries with the multiple and all selection options.
+- New measure: Profit goal and revenue goal, a 20% increase on the previous year's year-to-date profit or revenue.
+- Drill through page from the Map: 
+   Top 5 product table (Description, Profit YTD, Total Orders and totla revenue), 
+   Column chart total orders by category, 
+   Gagues for current and goal profit and revenue, 
+   Card visual for currently selected store.
+- Store Tooltip: based on the store's year-to-date profit performance against the profit target.
+- Navegation bar.
 
-Storres map page
-- Add map visualisation based on the geography hierarchy and bubbles size by ProfitYTD.
-- Add a slicer for each of the countries wiht the multiple and all selection options.
-- Create Profit goal and revenue goal measures , which should be a 20% increase on the previous year's year-to-date profit.
-- Create a drill through page from the Map page containing:Table(Description, Profit YTD, Total Orders and totla revenue), Column chart total orders by category, Gaguses for current and goal profit, Card visual for currently selected store.
-- Add a Store Tooltip page based on the  store's year-to-date profit performance against the profit target.
-
-
-
-Cross-filtering and navigation
--  Edit inetrations  for visual in the Executive summary, Customer Detail and Product detail pages.
-
-- Complete navegation bars, with icons for each main page, which chnage color when hover and when ctl + shif + click it move to the page assigned ot the icon.
-
+##### SQL metrics
 Metrics for Users Outside the company Using SQL
-- Connect to the AZure SQL server using PGADMIN4
-- Create csv file wiht the names of all the tables. 
-- Create csv files with the column names of for each table. 
+- Connected to the Azure SQL server using.
+- Created csv file with the names of all the tables within the database. 
+- Create csv files with the column names for each table. 
 - Query the SQL database save the results as .csv files and the query .sql.
 
 
-
-
-
 ## Main Featues
-
-- 
--  
+- Navegation bar to move between report pages.
+- Pop up slicer in product detail page to select product category and country.
+- Interactive map for store location displaying current vs goal profit for each store locations when hover.
 
 ## Licence
 [GPL-3.0](https://github.com/ChristianDaza/PowerBI_report/blob/main/LICENSE)
