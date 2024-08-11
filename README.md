@@ -106,6 +106,10 @@ Cross-filtering and navigation
 - Complete navegation bars, with icons for each main page, which chnage color when hover and when ctl + shif + click it move to the page assigned ot the icon.
 
 Metrics for Users Outside the company Using SQL
+- Connect to the AZure SQL server using PGADMIN4
+- Create csv file wiht the names of all the tables. 
+- Create csv files with the column names of for each table. 
+- Query the SQL database save the results as .csv files and the query .sql.
 
 
 
