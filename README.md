@@ -20,9 +20,11 @@ The aim of this project was to apply the knowledge and skills gain in the Azure 
 The source of this code is currently hosted at: https://github.com/ChristianDaza/EDA_finance.git
 
 Clone this git repository into your machine using the following code:
+
 ```
-git clone https://github.com/ChristianDaza/EDA_finance.git
+git clone https://github.com/ChristianDaza/EDA_finance.git 
 ```
+
 
 
 ## Process
@@ -35,7 +37,9 @@ git clone https://github.com/ChristianDaza/EDA_finance.git
 #### Build data model
 - Created a Date table using the based on  smalles value of Order Date and largest value of Shipping Date from the Orders table. Additional columns added include: Day of Week, Month Number, Month Name, Quarter, Year, Start of Year, Start of Quarter, Start of the Month and Start of Week columns.
 
-- A STAR schema was build between the tables using the followinf columns: product_code, store code, date, order Date and shipping data. All relationships were active, one-to-many and with single filter direction.
+- STAR schema:
+![alt text](<images/Schema Power Bi.png>)
+Build between the tables using the followinf columns: product_code, store code, date, order Date and shipping data. All relationships were active, one-to-many and with single filter direction.
 
 - A measure table was created and populated by the following: Total Orders, Total Revenue, Total Profit, Total costumers, Total Quantity, Profit YTD(Curretn year) and Revenue YTD(Curretn year) using DAX.
 
@@ -46,7 +50,9 @@ git clone https://github.com/ChristianDaza/EDA_finance.git
 
 #### Report 
 
-##### Customer detail paige
+##### Customer detail page
+![alt text](<images/Customer detail page.png>)
+
 - Card visual: total number of customers.
 - Card visual: revenue per customer (new measure).
 - Donut chart: total number of customers per country.
@@ -58,6 +64,8 @@ git clone https://github.com/ChristianDaza/EDA_finance.git
 - Navegation bar.
 
 ##### Executive summary page
+![alt text](<images/Executive summary.png>)
+
 - Card visuals: total revenue, total number of orders and total profit.
 - Line chart: Total revenue with the date Hierarchy (start of year, start of quarter and start of month).
 - Created donut chart  for revenue by country and store type.
@@ -67,6 +75,8 @@ git clone https://github.com/ChristianDaza/EDA_finance.git
 - Navegation bar.
 
 ##### Product Detail page
+![alt text](<images/Product detail page.png>)
+
 - New measures: current quarter orders, current quarter reveue and current quarter profit.
 - New measures: quarterly targets for orders, revenue and profit (current quarter measure + 10%).
 - New measure: difference between current quarter measures (Orders, Revenue and Profit) and targets. 
@@ -80,15 +90,23 @@ git clone https://github.com/ChristianDaza/EDA_finance.git
 - Navegation bar.
 
 ##### Store map page
+![alt text](<images/Store map page.png>)
+
 - Map: based on the geography hierarchy od the tores table and bubbles size by ProfitYTD.
 - Slicer: for  countries with the multiple and all selection options.
 - New measure: Profit goal and revenue goal, a 20% increase on the previous year's year-to-date profit or revenue.
 - Drill through page from the Map: 
+   ![alt text](<images/Stores drillthrough page.png>)
    Top 5 product table (Description, Profit YTD, Total Orders and totla revenue), 
    Column chart total orders by category, 
    Gagues for current and goal profit and revenue, 
    Card visual for currently selected store.
-- Store Tooltip: based on the store's year-to-date profit performance against the profit target.
+   Filter based on the selected country region from the Store map page.
+- Store Tooltip: 
+
+   ![alt text](<images/Tootip map.png>)
+
+   Based on the store's year-to-date profit performance against the profit target for the selected country region.
 - Navegation bar.
 
 ##### SQL metrics
@@ -101,8 +119,9 @@ Metrics for Users Outside the company Using SQL
 
 ## Main Featues
 - Navegation bar to move between report pages.
-- Pop up slicer in product detail page to select product category and country.
-- Interactive map for store location displaying current vs goal profit for each store locations when hover.
+- Navegation bar icons change colors when hovered over.
+- Pop up slicer in the product detail page to select product category and country.
+- Interactive map for store location displaying current vs goal profit for each store locations when hover over.
 
 ## Licence
 [GPL-3.0](https://github.com/ChristianDaza/PowerBI_report/blob/main/LICENSE)
