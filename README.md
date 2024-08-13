@@ -28,7 +28,7 @@ git clone https://github.com/ChristianDaza/PowerBI_report.git
 
 ## Usage
 
-After cloning the git repository navegate into the PowerBI_report folder and open the AiCore_Final_Project.pbix.
+After cloning the git repository navegate into the PowerBI_report folder, Power_BI and open the AiCore_Final_Project.pbix.
 
 
 ## Installation
