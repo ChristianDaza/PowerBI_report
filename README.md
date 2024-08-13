@@ -11,21 +11,27 @@ The aim of this project was to apply the knowledge and skills gain in the Azure 
 - [Description](#Description)
 - [Intallation](#Intallation)
 - [Usage](#Usage)
+- [Process](#Process)
 - [Main Features](#Main_Features)
 - [Lincence](#Licence)
 - [Contact Information](#Contact_information)
 
 
 ## Installation
-The source of this code is currently hosted at: https://github.com/ChristianDaza/EDA_finance.git
+The source of this code is currently hosted at: https://github.com/ChristianDaza/PowerBI_report.git
 
 Clone this git repository into your machine using the following code:
 
 ```
-git clone https://github.com/ChristianDaza/EDA_finance.git 
+git clone https://github.com/ChristianDaza/PowerBI_report.git
 ```
 
+## Usage
 
+After cloning the git repository navegate into the PowerBI_report folder and open the AiCore_Final_Project.pbix.
+
+
+## Installation
 
 ## Process
 
